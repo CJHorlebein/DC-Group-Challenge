@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAdS8R6FHyPrVRi7TyVIcj0Oailf-Yg9ro",
+        authDomain: "loginauthdc.firebaseapp.com",
+        databaseURL: "https://loginauthdc.firebaseio.com",
+        projectId: "loginauthdc",
+        storageBucket: "loginauthdc.appspot.com",
+        messagingSenderId: "278758749348"
+    };
+    firebase.initializeApp(config);
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+
+        <h1 clas="mx-auto">Welcome to My Awesome App</h1>
+        <div id="firebaseui-auth-container"></div>
+        <div id="loader">Loading...</div>
+    </div>
+
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+    <script src="signin.js"></script>
+</body>
+</html>
